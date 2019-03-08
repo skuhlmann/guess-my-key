@@ -1,11 +1,24 @@
 <template>
   <div class="Key__Form">
-    <h4>WIN MILLIONS</h4>
+    <h4>
+      Win
+      <b>Millions</b>
+      <sup>*</sup>
+      <p class="Key__note">
+        <i>
+          <sup>*</sup>in wei
+        </i>
+      </p>
+    </h4>
 
     <form v-if="this.result === ''" v-on:submit.prevent="guessKey" class="form">
       <h5>
-        ENTER A NUMBER BETWEEN 1 AND 2
-        <sup>256</sup>
+        Enter a number between
+        <b>1</b> and
+        <b>
+          2
+          <sup>256</sup>
+        </b>
       </h5>
       <input
         v-model="privateKey"
@@ -13,7 +26,6 @@
         class="Key__Input"
         type="text"
         name="privateKey"
-        placeholder="YOU CAN DO IT!"
         autocomplete="off"
       >
       <button
@@ -69,6 +81,10 @@ export default {
 h4 {
   flex-basis: 70px;
   flex-shrink: 0;
+}
+
+.Key__note {
+  font-size: 11px;
 }
 
 .form {

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Headline msg="GUESS MY PRIVATE KEY"/>
+    <Headline/>
     <KeyForm/>
   </div>
 </template>

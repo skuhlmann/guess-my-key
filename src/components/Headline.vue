@@ -1,5 +1,10 @@
 <template>
-  <h1>{{ msg }}</h1>
+  <h1>
+    <b>YOU&nbsp;</b>
+    <i>CAN&nbsp;</i> haz
+    <b>ALL&nbsp;</b>
+    <i>my&nbsp;</i> $$$!
+  </h1>
 </template>
 
 <script>
