@@ -32,11 +32,11 @@
         v-bind:disabled="privateKey.length < 1"
         v-bind:class="{ disabled: privateKey.length < 1 }"
         class="Key__button"
-      >Ok, I think I got it</button>
+      >Ok, I think I got it!</button>
     </form>
     <div v-if="this.result !== ''">
       <p class="Key__result">{{result}}</p>
-      <p class="Key__try" v-on:click="tryAgain">TRY AGAIN</p>
+      <p class="Key__try" v-on:click="tryAgain">Try again?</p>
     </div>
   </div>
 </template>
@@ -119,10 +119,21 @@ button.Key__button {
   margin-top: 6vh;
   flex-basis: 70px;
   flex-shrink: 0;
+  text-transform: none;
+  color: #000000;
+}
+
+button.Key__button:hover {
+  /* color: #555; */
+}
+
+button.Key__button.disabled {
+  color: #bbb;
+  background-color: white;
 }
 
 button.disabled:hover {
-  color: #555;
+  color: #bbb;
   border: 1px solid #bbb;
 }
 
