@@ -24,7 +24,7 @@
         v-model="privateKey"
         v-validate="'required'"
         class="Key__Input"
-        type="text"
+        type="number"
         name="privateKey"
         autocomplete="off"
       >
@@ -92,6 +92,15 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 input.Key__Input {
