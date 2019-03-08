@@ -1,8 +1,12 @@
 <template>
   <div class="Key__Form">
     <h4>
-      Win
-      <b>Millions</b>
+      Just guess my
+      private key and
+      <b>
+        Win
+        Millions
+      </b>
       <sup>*</sup>
       <p class="Key__note">
         <i>
@@ -121,10 +125,6 @@ button.Key__button {
   flex-shrink: 0;
   text-transform: none;
   color: #000000;
-}
-
-button.Key__button:hover {
-  /* color: #555; */
 }
 
 button.Key__button.disabled {
