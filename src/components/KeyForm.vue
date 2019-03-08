@@ -2,7 +2,7 @@
   <div class="Key__Form">
     <h4>
       Just guess my
-      private key and
+      PRIVATE KEY and
       <b>
         Win
         Millions
