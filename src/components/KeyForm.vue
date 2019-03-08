@@ -106,6 +106,10 @@ button.disabled:hover {
   line-height: 1;
 }
 
+p.Key__try {
+  margin-top: 12vh;
+}
+
 p.Key__try:hover {
   color: #555;
   cursor: pointer;
